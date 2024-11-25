@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<section class="vh-100" style="background-color: #967DC0FF;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-xl-10">
+                <div class="card" style="border-radius: 15px;">
+                    <div class="card-body p-5">
+                        <h6 class="mb-3">Список покупок</h6>
+                        <form class="d-flex justify-content-center align-items-center mb-4" >
+                            <div data-mdb-input-init class="form-outline flex-fill">
+                                <input type="text" id="new-item" class="form-control form-control-lg" />
+                            </div>
+                            <button type="submit"  onclick="addItem()" style="background-color: #967dc0; border-color: #967dc0" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg ms-2" id="add-item-button">Добавить</button>
+                        </form>
+                        <ul id="shopping-list" class="list-group mb-0">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="main.js"></script>
+</body>
+</html>
